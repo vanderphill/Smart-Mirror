@@ -107,7 +107,7 @@ def getWeather():
     location = (location.split(","))[0]
 
     # set doc to "city conditions" div
-    doc = doc.find("div",class_= "city-conditions row collapse ng-star-inserted") 
+    doc = doc.find("div",class_= "city-conditions row collapse") 
     
     # get current conditions
     current = doc.find('div', class_= "condition-icon small-6 medium-12 columns")
